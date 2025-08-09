@@ -28,7 +28,7 @@ def parse_frequency(input_string: str) -> list:
     Swahili words that have many English equivalents depending on context are only
     listed with one such possible equivalent per entry.
 
-    Returns a dictionary with the frequency as key and a tuple of parsed data as value. 
+    Returns a list of instances of the SwahiliWord class for each page of the pdf. 
     '''
     word_classes_reference = {"AD-ADJ": "complement to adjective",
                                 "ADJ": "adjective",
@@ -85,4 +85,5 @@ def pretty_print(input_list: list):
         print(object)
 
 frequency_of_swahili_words_first_page = parse_frequency(input_data)
+
 
