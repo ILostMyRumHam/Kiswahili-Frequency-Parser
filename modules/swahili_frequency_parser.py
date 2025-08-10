@@ -43,6 +43,7 @@ def parse_frequency(input_string: str) -> list:
                                 "NUM": "number",
                                 "NUM-INFL": "inflecting number",
                                 "NUM-UNINF": "uninflecting number",
+                                "MW": "multiword expression",
                                 "PERS": "personal pronoun",
                                 "PREP": "preposition",
                                 "PRON": "pronoun",
@@ -76,6 +77,7 @@ def parse_frequency(input_string: str) -> list:
 
     return parsed_data
 frequency_of_swahili_words_first_page = parse_frequency(input_data)
+
 
 
 
