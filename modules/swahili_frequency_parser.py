@@ -20,7 +20,7 @@ class SwahiliWord:
 
 def parse_frequency(input_string: str) -> list:
     '''
-    Parses the frequency of each word in a decreasing order.
+    Parse the frequency of each word in a decreasing order.
     Because there are certain words like "na" that are listed multiple times,
     and have multiple definitions, their frequencies are also listed
     separately - "na" has different frequencies when used as a coordinating constructor (319511), as an adverb (79135), and as
@@ -28,7 +28,7 @@ def parse_frequency(input_string: str) -> list:
     Swahili words that have many English equivalents depending on context are only
     listed with one such possible equivalent per entry.
 
-    Returns a dictionary with the frequency as key and a tuple of parsed data as value. 
+    Return a list of instances of the SwahiliWord class. 
     '''
     word_classes_reference = {"AD-ADJ": "complement to adjective",
                                 "ADJ": "adjective",
@@ -76,6 +76,7 @@ def parse_frequency(input_string: str) -> list:
 
     return parsed_data
 frequency_of_swahili_words_first_page = parse_frequency(input_data)
+
 
 
 
