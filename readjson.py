@@ -1,8 +1,6 @@
 import json 
 from random import randint
-select_current_page = 1
-select_random_page = True
-current_page = randint(1, 182) if select_random_page == True else select_current_page
+select_current_page = input("Select a page between 1 and 182: ")
 
 def load_json():
     try:
@@ -17,13 +15,23 @@ data = load_json()
 
 def access_json():
     try:
+        current_page = int(select_current_page)
+        print("---"*15)
+        print(f"Entries for page {current_page}")
         print("---"*15)
         for i in data[current_page-1].get(f"Page {current_page}"):
             print(i)
-    except IndexError:
-        print("This page number is not valid. Please choose a different number between 1 and 182")
+    except (IndexError, ValueError):
+        current_page = randint(1, 183)
+        print("---"*15)
+        print("This page number is not valid. Showing a random page instead.")
+        print(f"Entries for page {current_page}")
+        print("---"*15)
+        for i in data[current_page-1].get(f"Page {current_page}"):
+            print(i)
     finally:
         print("---"*15)
-        print(f"Showing entries for page {current_page}")
+        print(f"Entries for page {current_page}")
+        print("---"*15)
 
 access_json()
