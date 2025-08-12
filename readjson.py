@@ -21,7 +21,7 @@ def access_json():
         for i in data[current_page-1].get(f"Page {current_page}"):
             print(i)
     except IndexError:
-        print("Invalid page number. Choose a number between 1 and 182")
+        print("This page number is not valid. Please choose a different number between 1 and 182")
     finally:
         print("---"*15)
         print(f"Showing entries for page {current_page}")
