@@ -17,16 +17,20 @@ def pdf_parser(pdf_input: str) -> list:
     return entire_pdf_page_by_page
 
 parse_pdf = pdf_parser(reader)
-""" def json_conversion(parsed_data):
+def json_conversion(parsed_data): # Encoding currently correctly assigns the page
 # Convert into JSON
-    json_string = ""
-    for page in parsed_data:
-        json_string += json.dumps([ob.__dict__ for ob in page])
-    return json_string
-
-json_string = json_conversion(parse_pdf)
-def json_file_init(json_string):
+    json_list = []
+    page_counter = 1
     with open("frequency.json", "w") as out_file:
-        json.dump(json_string, out_file, sort_keys = True, indent = 4, ensure_ascii = False)
+        for page in parsed_data:
+            json_list.append({f"Page {page_counter}": [ob.__dict__ for ob in page]})
+            page_counter +=1
+        return json_list
 
-json_file_init(json_string) """
+json_list = json_conversion(parse_pdf)
+
+def json_file_init(json_list):
+    with open("frequency.json", "w") as out_file:
+        json.dump(json_list, out_file, indent = 4, ensure_ascii = False)
+
+json_file_init(json_list)

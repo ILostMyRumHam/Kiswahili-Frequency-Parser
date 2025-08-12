@@ -16,7 +16,7 @@ class SwahiliWord:
         self.english_possible_definition = english_possible_definition
         self.word_class = word_class
     def __repr__(self):
-        return f"Swahili word: '{self.word}', Frequency: '{self.frequency}', Word Class: '{self.word_class}', Possible English Equivalent: '{self.english_possible_definition}'. \n"
+        return f"Swahili word = {self.word}, Frequency = {self.frequency}, Word Class = {self.word_class}, Possible English Equivalent = {self.english_possible_definition}. \n"
 
 def parse_frequency(input_string: str) -> list:
     '''
@@ -77,10 +77,4 @@ def parse_frequency(input_string: str) -> list:
 
     return parsed_data
 frequency_of_swahili_words_first_page = parse_frequency(input_data)
-
-
-
-
-
-
 
