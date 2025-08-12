@@ -1,6 +1,6 @@
 import json 
 from random import randint
-select_current_page = input("Select a page between 1 and 182: ")
+select_current_page = input("Select a page between 1 and 183: ")
 
 def load_json():
     try:
