@@ -6,6 +6,4 @@ https://www.researchgate.net/publication/373953169_Frequency_list_of_Swahili_10_
 
 I am not responsible for the accuracy of the original list and cannot make any assurances about its truthfulness.
 
-In the current state for the parser to work properly you will need to download the pdf and copy it into the same directory as the parser + possibly change the file name inside swahili_json_init.py
-
-TODO: Grab the information directly from the JSON file instead of the raw pdf
+The JSON serialization should be working as of today (12.08.2025) so there should be no need to work with the raw pdf anymore.
