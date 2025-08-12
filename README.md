@@ -1,7 +1,7 @@
 # Swahili-Frequency-Parser
 Python script for JSON serialization and parsing of data from a list of 10,000 most frequently used Swahili words and their approximate English equivalents
 
-To use the script, clone the repository or download the root directory. Then either run main.py inside an Integrated Development Environment of your choosing.
+To use the script, clone the repository or download the root directory. Then run main.py inside an Integrated Development Environment of your choosing.
 If you wish to run the script using Python Shell, you can put something like this line at the end of the main.py file to read the entries:
 >input('Press ENTER to exit')
 
