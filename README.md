@@ -15,7 +15,7 @@ I am not responsible for the accuracy of the original list and cannot make any a
 
 # Updates
 
-- [ ] The JSON serialization should be working as of today (12.08.2025) so there should be no need to work with the raw pdf anymore.
+- [x] The JSON serialization should be working as of today (12.08.2025) so there should be no need to work with the raw pdf anymore.
 
 # Warranty 
 ```
