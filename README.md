@@ -15,12 +15,8 @@ I am not responsible for the accuracy of the original list and cannot make any a
 
 # Interactive Visualisation using p5.js
 
-## Fullscreen
-https://editor.p5js.org/JISKRA/full/X6Zv0NfGz
+https://editor.p5js.org/JISKRA/collections/8M0AGqfnT
 
-## Edit:
-
-https://editor.p5js.org/JISKRA/sketches/X6Zv0NfGz
 # Updates
 
 - [x] The JSON serialization should be working as of today (12.08.2025) so there should be no need to work with the raw pdf anymore.
