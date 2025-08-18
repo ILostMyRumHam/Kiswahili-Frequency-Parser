@@ -13,6 +13,13 @@ https://www.researchgate.net/publication/373953169_Frequency_list_of_Swahili_10_
 
 I am not responsible for the accuracy of the original list and cannot make any assurances about its truthfulness.
 
+# Interactive Visualisation
+
+Fullscreen:
+https://editor.p5js.org/JISKRA/full/Yqx8Iadi9
+Edit:
+https://editor.p5js.org/JISKRA/sketches/Yqx8Iadi9
+
 # Updates
 
 - [x] The JSON serialization should be working as of today (12.08.2025) so there should be no need to work with the raw pdf anymore.
