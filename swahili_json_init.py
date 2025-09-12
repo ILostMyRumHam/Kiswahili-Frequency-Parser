@@ -1,6 +1,7 @@
 from pypdf import PdfReader
 from modules import swahili_frequency_parser
 import json
+from tqdm import tqdm
 
 first_page = swahili_frequency_parser.frequency_of_swahili_words_first_page
 reader = PdfReader('swahili-freq-10000.pdf')
@@ -10,7 +11,7 @@ def pdf_parser(pdf_input: str) -> list:
     '''Parse the pdf starting from the second page of entries'''
     entire_pdf_page_by_page = []
     entire_pdf_page_by_page.append(first_page)
-    for page in range(2, pdf_length):
+    for page in tqdm(range(2, pdf_length)):
         current_page = pdf_input.pages[page].extract_text()
         parse_current_page = swahili_frequency_parser.parse_frequency(current_page)
         entire_pdf_page_by_page.append(parse_current_page)
